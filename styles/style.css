@@ -8,7 +8,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* Colours 
+/* Colors 
 lavender:   #e6e6fa
 magenta:    #cb6ce6
 dark grey:       #505050
@@ -22,15 +22,55 @@ dark grey:       #505050
 body {
 
 }
-
-nav {
+.navContainer{
+    margin: auto;
     width: 100%;
-    height: 10px;
-    display: flex;
+    height: 75px;
+    background-color: #505050;
 }
 
-.navImage {
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 100px;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid lime;
+}
 
+/* Logo in nav */
+.navImage {
+    position: relative;
+    height: 65px;
+    width: 65px;
+    z-index: 1;
+}
+
+.navImage a:hover {
+    
+    height: 65px;
+    width: 65px;
+}
+
+.navLink {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+}
+
+.navLink a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    font-size: 1.1rem;
+    color: #cb6ce6;
+    text-decoration: none;
+}
+
+.navLink a:hover{
+    color: white;
 }
 
 .wrapper {
@@ -39,7 +79,7 @@ nav {
     background-color: #e6e6fa;
 }
 
-img {
+.featImg {
     
     margin: auto;
     width: 100%;
@@ -50,6 +90,12 @@ img {
 }
 
 figure {
+        margin: auto;
+    width: 100%;
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 50% 38%;
     width: 100%;
     margin: auto;
 }
@@ -70,7 +116,7 @@ p {
     margin: auto;
     padding: 20px 20px;
     max-width: 75%;
-    background-color: honeydew;
+    background-color: white;
 
 }
 
