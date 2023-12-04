@@ -79,49 +79,51 @@ body {
     background-color: #e6e6fa;
 }
 
-.featImg {
-    
+figure {
+    position: relative;
     margin: auto;
     width: 100%;
-    min-height: 300px;
+    object-position: 50% 38%;
+    padding-bottom: 30px;
+}
+
+.featImg {
+    margin: auto;
+    width: 100%;
     max-height: 400px;
     object-fit: cover;
     object-position: 50% 38%;
 }
 
-figure {
-        margin: auto;
-    width: 100%;
-    min-height: 300px;
-    max-height: 400px;
-    object-fit: cover;
-    object-position: 50% 38%;
-    width: 100%;
-    margin: auto;
-}
 figcaption {
-    margin: auto;
+    position: absolute;
+    width: 100%;
+    padding: 10px 20px;
     text-align: center;
-    padding: 10px 0;
     background-color: lightgrey;
+    border: 1px solid pink;
+    
 }
 
 p {
     padding: 20px 20px;
 }
 
+.introP {
+    margin: 20px 0;
+    /*border: 2px red solid;*/
+}
+
 /*Recipe Box*/
 .recipeBox {
-    border: solid red 2px;
+    /*border: solid red 2px;*/
     margin: auto;
-    padding: 20px 20px;
-    max-width: 75%;
+    padding: 10px 20px 20px 20px;
+    max-width: 80%;
     background-color: white;
-
 }
 
 /*Ingredients Lists*/
-
 
 .ingMulti {
     font: 1em Arial, sans-serif, bold;
