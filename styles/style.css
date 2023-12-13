@@ -81,6 +81,7 @@ div.recipeTitle {
     align-content: flex-start;
     height: 82px;
     width: 100%;
+    overflow: hidden;
     border: 1px dotted #000;
 }
 
@@ -92,7 +93,8 @@ h1 {
     font-size: 130px;
     font-weight: 900;
     text-transform: uppercase;
-    font-kerning: none;
+    text-align: center;
+    letter-spacing: 4vw;
     margin: 0;
 }
 
@@ -102,7 +104,8 @@ figure {
     width: 100%;
     object-position: 50% 38%;
     padding-bottom: 30px;
-}
+    margin: 0;
+    border: 2px solid red;
 
 .featImg {
     margin: auto;
